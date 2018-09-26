@@ -26,7 +26,7 @@ process.stdin.on('readable', function() {
                 process.stdout.write(process.env.OS);
                 break;
             case '/getOSinfo':
-                getOSinfo(); //wywołanie funkcji  getOSinfo znajdującej się w zaimportowanym module OSinfo
+                OSinfo.print(); //wywołanie funkcji  getOSinfo znajdującej się w zaimportowanym module OSinfo
                 break;
             default:
                 process.stderr.write('Wrong instruction!\n');
