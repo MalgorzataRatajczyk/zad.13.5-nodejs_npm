@@ -17,6 +17,5 @@ function uptime (seconds) {
         }
     }
 }
-console.log(uptime(seconds));
 
 exports.print = uptime; //wyeksportowanie funkcji uptime
