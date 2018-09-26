@@ -1,5 +1,5 @@
 var os = require('os');
-var timeFormatting = require('timeFormatting'); // zaimportowanie stworzonego modułu timeFormatting z katalogu modules
+var timeFormatting = require('./timeFormatting'); // zaimportowanie stworzonego modułu timeFormatting z katalogu modules
 var colors = require('colors');
 
 function getOSinfo() {
@@ -18,6 +18,6 @@ function getOSinfo() {
     console.log('CPU model:'.blue, cpu);
     console.log('Uptime: ~'.green, (uptime / 60).toFixed(0), 'min');
     console.log('User name:'.yellow, userInfo.username);
-    console.log('Home dir:'.pink, userInfo.homedir);
+    console.log('Home dir:'.cyan, userInfo.homedir);
 }
 exports.print = getOSinfo; //wyeksportowanie funkcji getOSinfo
